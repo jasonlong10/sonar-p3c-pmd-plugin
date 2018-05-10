@@ -1,0 +1,11 @@
+<p>【%s】应该作为equals的参数，而不是调用方</p>
+<p>Object的equals方法容易抛空指针异常，应使用常量或确定有值的对象来调用equals。</p>
+<p>Examples:</p>
+<pre>
+    public void f(String str){
+        String inner = "hi";
+        if (inner.equals(str)) {
+            System.out.println("hello world");
+        }
+    }
+</pre>
